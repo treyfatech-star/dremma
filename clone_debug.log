@@ -1,0 +1,37 @@
+Fri Jan  2 10:12:11 2026: Script started
+Fri Jan  2 10:12:11 2026: Fetching https://jbpritzker.com/...
+Fri Jan  2 10:12:13 2026: Failed to fetch main page: HTTP Error 403: Forbidden
+Fri Jan  2 10:12:32 2026: Script started
+Fri Jan  2 10:12:32 2026: Fetching https://jbpritzker.com/...
+Fri Jan  2 10:12:33 2026: Failed to fetch main page: HTTP Error 403: Forbidden
+Fri Jan  2 10:12:55 2026: Script started
+Fri Jan  2 10:12:55 2026: Fetching https://www.jbpritzker.com/...
+Fri Jan  2 10:13:02 2026: Main page fetched successfully
+Fri Jan  2 10:13:02 2026: Created assets directory
+Fri Jan  2 10:13:02 2026: Found 31 resources to download
+Fri Jan  2 10:13:02 2026: Downloading https://jbpritzker.com/wp-content/themes/bricks/assets/css/libs/ionicons-layer.min.css?ver=1764633694 to assets\ionicons-layer.min.css
+Fri Jan  2 10:13:03 2026: Downloading data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20682'%3E%3C/svg%3E to assets\svg%3E
+Fri Jan  2 10:13:03 2026: Downloading https://use.typekit.net/fpp2vtw.css?ver=6.8.3 to assets\fpp2vtw.css
+Fri Jan  2 10:13:04 2026: Downloading https://jbpritzker.com/wp-content/themes/bricks/assets/css/libs/font-awesome-6-brands-layer.min.css?ver=1764633694 to assets\font-awesome-6-brands-layer.min.css
+Fri Jan  2 10:13:04 2026: Downloading https://jbpritzker.com/wp-content/plugins/bricksextras/components/assets/js/burgertrigger.min.js?ver=1.6.2 to assets\burgertrigger.min.js
+Fri Jan  2 10:13:05 2026: Downloading https://jbpritzker.com/wp-content/uploads/2025/06/cropped-jbp4g-site-icon-32x32.png to assets\cropped-jbp4g-site-icon-32x32.png
+Fri Jan  2 10:13:06 2026: Downloading https://static.everyaction.com/ea-actiontag/at.js to assets\at.js
+Fri Jan  2 10:13:08 2026: Downloading https://jbpritzker.com/wp-content/themes/bricks/assets/css/frontend-layer.min.css?ver=1764633694 to assets\frontend-layer.min.css
+Fri Jan  2 10:13:09 2026: Downloading https://jbpritzker.com/wp-content/themes/bricks/assets/css/libs/font-awesome-6-layer.min.css?ver=1764633694 to assets\font-awesome-6-layer.min.css
+Fri Jan  2 10:13:10 2026: Downloading https://jbpritzker.com/wp-content/uploads/2025/06/web-logo-ftr-yellow.svg to assets\web-logo-ftr-yellow.svg
+Fri Jan  2 10:13:11 2026: Downloading https://jbpritzker.com/wp-content/uploads/2025/06/cropped-jbp4g-site-icon-192x192.png to assets\cropped-jbp4g-site-icon-192x192.png
+Fri Jan  2 10:13:12 2026: Downloading https://jbpritzker.com/wp-content/themes/bricks-child/style.css?ver=1742513987 to assets\style.css
+Fri Jan  2 10:13:12 2026: Downloading https://jbpritzker.com/wp-content/plugins/bricksextras/components/assets/js/frontend.min.js?ver=1.6.2 to assets\frontend.min.js
+Fri Jan  2 10:13:13 2026: Downloading https://jbpritzker.com/wp-content/themes/bricks/assets/js/bricks.min.js?ver=1764633694 to assets\bricks.min.js
+Fri Jan  2 10:13:14 2026: Downloading https://jbpritzker.com/wp-content/plugins/sitepress-multilingual-cms/res/js/cookies/language-cookie.js?ver=486900 to assets\language-cookie.js
+Fri Jan  2 10:13:15 2026: Downloading https://jbpritzker.com/wp-content/uploads/2025/06/cropped-jbp4g-site-icon-180x180.png to assets\cropped-jbp4g-site-icon-180x180.png
+Fri Jan  2 10:13:16 2026: Downloading https://jbpritzker.com/wp-content/plugins/bricksextras/components/assets/js/notificationbar.min.js?ver=1.6.2 to assets\notificationbar.min.js
+Fri Jan  2 10:13:16 2026: Downloading https://jbpritzker.com/wp-content/plugins/bricksextras/components/assets/js/offcanvas.min.js?ver=1.6.2 to assets\offcanvas.min.js
+Fri Jan  2 10:13:17 2026: Downloading https://jbpritzker.com/wp-content/plugins/bricksextras/components/assets/js/inert.min.js?ver=1.6.2 to assets\inert.min.js
+Fri Jan  2 10:13:18 2026: Downloading https://jbpritzker.com/wp-content/plugins/sitepress-multilingual-cms/templates/language-switchers/legacy-list-horizontal/style.min.css?ver=1 to assets\style.min.css
+Fri Jan  2 10:13:19 2026: Downloading https://jbpritzker.com/wp-content/uploads/2025/06/web-logo-hdr.svg to assets\web-logo-hdr.svg
+Fri Jan  2 10:13:19 2026: Downloading https://jbpritzker.com/wp-content/themes/bricks/assets/js/libs/photoswipe.umd.min.js?ver=5.4.4 to assets\photoswipe.umd.min.js
+Fri Jan  2 10:13:20 2026: Downloading https://jbpritzker.com/wp-content/themes/bricks/assets/css/libs/photoswipe.min.css?ver=1764633694 to assets\photoswipe.min.css
+Fri Jan  2 10:13:21 2026: Downloading https://jbpritzker.com/wp-content/themes/bricks/assets/js/libs/photoswipe-lightbox.umd.min.js?ver=5.4.4 to assets\photoswipe-lightbox.umd.min.js
+Fri Jan  2 10:13:22 2026: index.html written successfully
+Fri Jan  2 10:13:22 2026: Script finished
