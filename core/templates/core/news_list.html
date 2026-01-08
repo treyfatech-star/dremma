@@ -1,0 +1,49 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+<section class="brxe-section" style="padding-top: 4rem; padding-bottom: 4rem;">
+    <div class="brxe-container">
+        <h1 class="brxe-heading" style="text-align: center; margin-bottom: 3rem; font-size: 3rem;">News & Updates</h1>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 3rem;">
+            {% for article in articles %}
+            <article style="display: flex; flex-direction: column;">
+                {% if article.image %}
+                    <a href="{% url 'news_detail' article.slug %}" style="display: block; margin-bottom: 1.5rem; border-radius: 8px; overflow: hidden; height: 250px;">
+                        <img src="{{ article.image.url }}" alt="{{ article.title }}" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+                    </a>
+                {% endif %}
+                
+                <div>
+                    <span style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; color: #666; display: block; margin-bottom: 0.5rem;">
+                        {{ article.published_date|date:"F j, Y" }}
+                    </span>
+                    <h2 style="font-size: 1.8rem; line-height: 1.2; margin-bottom: 1rem;">
+                        <a href="{% url 'news_detail' article.slug %}" style="text-decoration: none; color: inherit; transition: color 0.2s;">
+                            {{ article.title }}
+                        </a>
+                    </h2>
+                    <div class="brxe-text-basic" style="margin-bottom: 1.5rem; color: #555;">
+                        {{ article.content|truncatewords:30 }}
+                    </div>
+                    <a href="{% url 'news_detail' article.slug %}" class="brxe-button sm outline">Read More</a>
+                </div>
+            </article>
+            {% empty %}
+            <div style="grid-column: 1 / -1; text-align: center; padding: 4rem;">
+                <p>No news updates at this time.</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<style>
+    article img:hover {
+        transform: scale(1.05);
+    }
+    article h2 a:hover {
+        color: var(--bricks-color-cvclkr);
+    }
+</style>
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+<section class="brxe-section" style="padding-top: 4rem; padding-bottom: 4rem;">
+    <div class="brxe-container">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start;">
+            <div style="order: 1;">
+                {% if page.image %}
+                    <img src="{{ page.image.url }}" alt="{{ page.title }}" style="width: 100%; height: auto; border-radius: 8px;">
+                {% else %}
+                    <div style="width: 100%; height: 400px; background-color: #eee; display: flex; align-items: center; justify-content: center; color: #999;">
+                        No Image Available
+                    </div>
+                {% endif %}
+            </div>
+
+            <div style="order: 2;">
+                <h1 class="brxe-heading" style="margin-bottom: 2rem; font-size: 3rem; line-height: 1.1;">{{ page.title }}</h1>
+                <div class="brxe-text-basic" style="font-size: 1.1rem; line-height: 1.6;">
+                    {{ page.content|safe }}
+                </div>
+
+                <div style="margin-top: 2rem;">
+                    <a href="{% url 'signup' %}" class="brxe-button">Join the Team</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    @media (max-width: 768px) {
+        .brxe-container > div { grid-template-columns: 1fr !important; }
+        .brxe-container > div > div:first-child { order: 1; }
+        .brxe-container > div > div:last-child { order: 2; }
+    }
+</style>
+{% endblock %}

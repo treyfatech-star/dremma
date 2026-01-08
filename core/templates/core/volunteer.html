@@ -1,0 +1,73 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+<section class="brxe-section" style="padding-top: 4rem; padding-bottom: 4rem;">
+    <div class="brxe-container">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+            <div>
+                <h1 class="brxe-heading" style="font-size: 3.5rem; line-height: 1.1; margin-bottom: 2rem;">Join Team Dr. Emmanuel N. Musa</h1>
+                <div class="brxe-text-basic" style="font-size: 1.2rem; margin-bottom: 2rem;">
+                    {{ page.content|linebreaks }}
+                </div>
+                {% if page.image %}
+                    <img src="{{ page.image.url }}" alt="Volunteer" style="border-radius: 8px; width: 100%; height: auto;">
+                {% endif %}
+            </div>
+
+            <div style="background: #f4f4f4; padding: 3rem; border-radius: 12px;">
+                <h2 style="margin-bottom: 1.5rem; font-size: 2rem;">Sign Up Today</h2>
+                <p style="margin-bottom: 2rem;">Sign up to join the team today and receive updates from the campaign, learn about volunteer opportunities, and more.</p>
+
+                <form action="{% url 'signup' %}" method="POST" style="display: grid; gap: 1rem;">
+                    {% csrf_token %}
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                        <div>
+                            <label for="first_name" style="display: block; margin-bottom: 0.5rem; font-weight: bold;">First Name <span style="color: red;">*</span></label>
+                            <input type="text" id="first_name" name="first_name" required style="width: 100%; padding: 1rem; border: 1px solid #ccc; border-radius: 4px;">
+                        </div>
+                        <div>
+                            <label for="last_name" style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Last Name <span style="color: red;">*</span></label>
+                            <input type="text" id="last_name" name="last_name" required style="width: 100%; padding: 1rem; border: 1px solid #ccc; border-radius: 4px;">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="email" style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Email Address <span style="color: red;">*</span></label>
+                        <input type="email" id="email" name="email" required style="width: 100%; padding: 1rem; border: 1px solid #ccc; border-radius: 4px;">
+                    </div>
+
+                    <div>
+                        <label for="phone" style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Mobile Phone</label>
+                        <input type="tel" id="phone" name="mobile_phone" style="width: 100%; padding: 1rem; border: 1px solid #ccc; border-radius: 4px;">
+                    </div>
+
+                    <div>
+                        <label for="zip" style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Zip Code</label>
+                        <input type="text" id="zip" name="postal_code" style="width: 100%; padding: 1rem; border: 1px solid #ccc; border-radius: 4px;">
+                    </div>
+
+                    <input type="hidden" name="source" value="volunteer">
+                    <div style="display: flex; align-items: center; gap: 0.5rem;">
+                        <input type="checkbox" id="consent_sms" name="consent_sms" checked>
+                        <label for="consent_sms" style="font-size: 0.9rem;">I agree to receive periodic text messages</label>
+                    </div>
+
+                    <div style="margin-top: 1rem;">
+                        <button type="submit" class="brxe-button" style="width: 100%; justify-content: center;">Sign Up</button>
+                    </div>
+
+                    <p style="font-size: 0.8rem; color: #666; margin-top: 1rem;">
+                        By submitting your mobile phone number you are agreeing to receive periodic text messages from this organization. Message and data rates may apply. Text HELP for more information. Text STOP to stop receiving messages.
+                    </p>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<style>
+    @media (max-width: 768px) {
+        .brxe-container > div { grid-template-columns: 1fr !important; }
+    }
+</style>
+{% endblock %}

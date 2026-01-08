@@ -1,0 +1,202 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="brxe-template" id="brxe-ujafxo"><section class="brxe-section bricks-lazy-hidden" id="brxe-dqgdqv"><div class="brxe-container bricks-lazy-hidden" id="brxe-hjeeex"><div class="brxe-block brx-grid bricks-lazy-hidden" id="brxe-vrcnla"><div class="brxe-block bricks-lazy-hidden" id="brxe-dpmcxe"><div class="brxe-block bricks-lazy-hidden" id="brxe-octnbp"><img alt="" class="brxe-image css-filter size-large bricks-lazy-hidden" data-sizes="(max-width: 1024px) 100vw, 1024px" data-src="{% if home_page.hero_image %}{{ home_page.hero_image.url }}{% else %}https://jbpritzker.com/wp-content/uploads/2025/06/500077874_1245992866893381_3831927120966684709_n-1024x683.webp{% endif %}" {% if not home_page.hero_image %}data-srcset="https://jbpritzker.com/wp-content/uploads/2025/06/500077874_1245992866893381_3831927120966684709_n-1024x683.webp 1024w, https://jbpritzker.com/wp-content/uploads/2025/06/500077874_1245992866893381_3831927120966684709_n-300x200.webp 300w, https://jbpritzker.com/wp-content/uploads/2025/06/500077874_1245992866893381_3831927120966684709_n-768x512.webp 768w, https://jbpritzker.com/wp-content/uploads/2025/06/500077874_1245992866893381_3831927120966684709_n-1536x1024.webp 1536w, https://jbpritzker.com/wp-content/uploads/2025/06/500077874_1245992866893381_3831927120966684709_n.webp 2048w"{% endif %} data-type="string" decoding="async" fetchpriority="high" height="683" id="brxe-wxdmiq" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E" width="1024"/><div class="brxe-block bricks-lazy-hidden" id="brxe-zfvrgg"><a class="brxe-button bricks-button bricks-background-primary bricks-lightbox" data-pswp-height="720" data-pswp-video-url="{{ home_page.video_url }}" data-pswp-width="1280" href="{{ home_page.video_url }}" id="brxe-axthuo"><i class="fa fa-circle-play"></i>Play Launch Video</a><img alt="" class="brxe-image css-filter size-large bricks-lazy-hidden" data-sizes="(max-width: 1024px) 100vw, 1024px" data-src="{% if video_thumb_url %}{{ video_thumb_url }}{% elif home_page.video_thumbnail %}{{ home_page.video_thumbnail.url }}{% elif home_page.hero_image %}{{ home_page.hero_image.url }}{% else %}{% static 'core/cropped-jbp4g-site-icon-192x192.png' %}{% endif %}" data-type="string" decoding="async" height="418" id="brxe-jzycju" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20418'%3E%3C/svg%3E" width="1024"/></div></div></div><div class="brxe-block bricks-lazy-hidden" id="brxe-dosfil"><div class="brxe-block bricks-lazy-hidden" id="brxe-kgypuw"><div class="brxe-block bricks-lazy-hidden" id="brxe-jgkodh"><div class="brxe-text-basic" id="brxe-lneoek">{{ home_page.hero_eyebrow }}</div></div></div><div class="brxe-text" id="brxe-qenwid"><p>{{ home_page.hero_slogan|safe }}</p>
+</div><div class="brxe-block bricks-lazy-hidden" id="brxe-cbjjzd"><div class="brxe-text" id="brxe-xfpmks"><p><span style="font-weight: 400;">{{ home_page.join_disclaimer }}</span></p>
+</div></div></div></div></div></section></div><div class="brxe-template" id="brxe-oeukae"><section class="brxe-section bricks-lazy-hidden" id="brxe-mqyuqc"><div class="brxe-container bricks-lazy-hidden" id="brxe-hqpxzy"><div class="brxe-block brx-grid bricks-lazy-hidden" id="brxe-oscnmt"><div class="brxe-block bricks-lazy-hidden" id="brxe-thdhis"><div class="brxe-block bricks-lazy-hidden" id="brxe-eacfco"><div class="brxe-text-basic gd-type-brow" id="brxe-pbqphh">{{ home_page.meet_candidate_eyebrow }}</div><h2 class="brxe-heading" id="brxe-dnwxnf">{{ home_page.meet_candidate_title|safe }}</h2><div class="brxe-text-basic" id="brxe-vnlnrt">{{ home_page.meet_candidate_description }}</div><a class="brxe-text-link" href="{% url 'meet_candidate' %}" id="brxe-ofzurb"><span class="icon"><i class="fas fa-arrow-right-long"></i></span><span class="text">{{ home_page.meet_candidate_button_text }}</span></a></div></div><div class="brxe-block brx-grid bricks-lazy-hidden" id="brxe-gcmjkp"><div class="brxe-block bricks-lazy-hidden" id="brxe-ekiltc"><img alt="" class="brxe-image css-filter size-large bricks-lazy-hidden" data-sizes="(max-width: 802px) 100vw, 802px" data-src="{% if home_page.meet_candidate_image %}{{ home_page.meet_candidate_image.url }}{% else %}https://jbpritzker.com/wp-content/uploads/2025/06/Screenshot-2025-05-20-at-10.44.15 PM-2-gs-802x1024.png{% endif %}" {% if not home_page.meet_candidate_image %}data-srcset="https://jbpritzker.com/wp-content/uploads/2025/06/Screenshot-2025-05-20-at-10.44.15 PM-2-gs-802x1024.png 802w, https://jbpritzker.com/wp-content/uploads/2025/06/Screenshot-2025-05-20-at-10.44.15 PM-2-gs-235x300.png 235w, https://jbpritzker.com/wp-content/uploads/2025/06/Screenshot-2025-05-20-at-10.44.15 PM-2-gs-768x981.png 768w, https://jbpritzker.com/wp-content/uploads/2025/06/Screenshot-2025-05-20-at-10.44.15 PM-2-gs-1203x1536.png 1203w, https://jbpritzker.com/wp-content/uploads/2025/06/Screenshot-2025-05-20-at-10.44.15 PM-2-gs.png 1320w"{% endif %} data-type="string" decoding="async" height="1024" id="brxe-aadzxo" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20802%201024'%3E%3C/svg%3E" width="802"/></div><div class="brxe-block bricks-lazy-hidden" id="brxe-somjce"><img alt="" class="brxe-image css-filter size-large bricks-lazy-hidden" data-sizes="(max-width: 1024px) 100vw, 1024px" data-src="{% if home_page.meet_candidate_image_2 %}{{ home_page.meet_candidate_image_2.url }}{% else %}https://jbpritzker.com/wp-content/uploads/2025/07/95D16E3F-CA20-45F1-99BD-384B7247E54B_1_105_c-1024x682.webp{% endif %}" {% if not home_page.meet_candidate_image_2 %}data-srcset="https://jbpritzker.com/wp-content/uploads/2025/07/95D16E3F-CA20-45F1-99BD-384B7247E54B_1_105_c-1024x682.webp 1024w, https://jbpritzker.com/wp-content/uploads/2025/07/95D16E3F-CA20-45F1-99BD-384B7247E54B_1_105_c-300x200.webp 300w, https://jbpritzker.com/wp-content/uploads/2025/07/95D16E3F-CA20-45F1-99BD-384B7247E54B_1_105_c-768x512.webp 768w, https://jbpritzker.com/wp-content/uploads/2025/07/95D16E3F-CA20-45F1-99BD-384B7247E54B_1_105_c.webp 1280w"{% endif %} data-type="string" decoding="async" height="682" id="brxe-zawdag" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20682'%3E%3C/svg%3E" width="1024"/></div><div class="brxe-block bricks-lazy-hidden" id="brxe-vdxams"><img alt="" class="brxe-image css-filter size-large bricks-lazy-hidden" data-sizes="(max-width: 879px) 100vw, 879px" data-src="{% if home_page.meet_candidate_image_3 %}{{ home_page.meet_candidate_image_3.url }}{% else %}https://jbpritzker.com/wp-content/uploads/2025/06/image-2-879x1024.jpg{% endif %}" {% if not home_page.meet_candidate_image_3 %}data-srcset="https://jbpritzker.com/wp-content/uploads/2025/06/image-2-879x1024.jpg 879w, https://jbpritzker.com/wp-content/uploads/2025/06/image-2-257x300.jpg 257w, https://jbpritzker.com/wp-content/uploads/2025/06/image-2-768x895.jpg 768w, https://jbpritzker.com/wp-content/uploads/2025/06/image-2.jpg 1208w"{% endif %} data-type="string" decoding="async" height="1024" id="brxe-jznbth" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20879%201024'%3E%3C/svg%3E" width="879"/></div></div></div></div></section></div><div class="brxe-template" id="brxe-qedqcr"><section class="brxe-section bricks-lazy-hidden" id="brxe-hefqcq"><div class="brxe-container bricks-lazy-hidden" id="brxe-iyammy"><div class="brxe-block brx-grid bricks-lazy-hidden" id="brxe-xhnvkf"><div class="brxe-block bricks-lazy-hidden" id="brxe-eskplg"></div><div class="brxe-block bricks-lazy-hidden" id="brxe-mgboeb"><h3 class="brxe-heading" id="brxe-dzdpby">{{ home_page.running_mate_title }}</h3><div class="brxe-text-basic" id="brxe-gooqjy">{{ home_page.running_mate_description }}</div><a class="brxe-text-link" href="{% url 'meet_running_mate' %}" id="brxe-pnxxdz"><span class="icon"><i class="fas fa-arrow-right"></i></span><span class="text">{{ home_page.running_mate_button_text }}</span></a></div><div class="brxe-block bricks-lazy-hidden" id="brxe-hwdwxn"><img alt="" class="brxe-image css-filter size-large bricks-lazy-hidden" data-sizes="(max-width: 1024px) 100vw, 1024px" data-src="{% if home_page.running_mate_image_1 %}{{ home_page.running_mate_image_1.url }}{% else %}https://jbpritzker.com/wp-content/uploads/2025/06/10-standing-up-min-e1749409747501-1024x759.png{% endif %}" {% if not home_page.running_mate_image_1 %}data-srcset="https://jbpritzker.com/wp-content/uploads/2025/06/10-standing-up-min-e1749409747501-1024x759.png 1024w, https://jbpritzker.com/wp-content/uploads/2025/06/10-standing-up-min-e1749409747501-300x222.png 300w, https://jbpritzker.com/wp-content/uploads/2025/06/10-standing-up-min-e1749409747501-768x569.png 768w, https://jbpritzker.com/wp-content/uploads/2025/06/10-standing-up-min-e1749409747501.png 1053w"{% endif %} data-type="string" decoding="async" height="759" id="brxe-wirrda" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20759'%3E%3C/svg%3E" width="1024"/></div><div class="brxe-block bricks-lazy-hidden" id="brxe-xptdsz"><img alt="" class="brxe-image css-filter size-large bricks-lazy-hidden" data-sizes="(max-width: 1024px) 100vw, 1024px" data-src="{% if home_page.running_mate_image_2 %}{{ home_page.running_mate_image_2.url }}{% else %}https://jbpritzker.com/wp-content/uploads/2025/06/MITCHELL_STILLS_10-e1751291906317-1024x697.png{% endif %}" {% if not home_page.running_mate_image_2 %}data-srcset="https://jbpritzker.com/wp-content/uploads/2025/06/MITCHELL_STILLS_10-e1751291906317-1024x697.png 1024w, https://jbpritzker.com/wp-content/uploads/2025/06/MITCHELL_STILLS_10-e1751291906317-300x204.png 300w, https://jbpritzker.com/wp-content/uploads/2025/06/MITCHELL_STILLS_10-e1751291906317-768x523.png 768w, https://jbpritzker.com/wp-content/uploads/2025/06/MITCHELL_STILLS_10-e1751291906317-1536x1045.png 1536w, https://jbpritzker.com/wp-content/uploads/2025/06/MITCHELL_STILLS_10-e1751291906317.png 1587w"{% endif %} data-type="string" decoding="async" height="697" id="brxe-ibouvy" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20697'%3E%3C/svg%3E" width="1024"/></div></div></div></section></div><div class="brxe-template" id="brxe-bzacts"><section class="brxe-section bricks-lazy-hidden" id="brxe-fbxjlr"><div class="brxe-container bricks-lazy-hidden" id="brxe-zchawj"><div class="brxe-block brx-grid bricks-lazy-hidden" id="brxe-yfpeut"><div class="brxe-block bricks-lazy-hidden" id="brxe-tbnwip"><div class="brxe-block bricks-lazy-hidden" id="brxe-nkiqpb"><h2 class="brxe-heading" id="brxe-uecvyq">{{ home_page.vision_title|safe }}</h2><div class="brxe-text-basic" id="brxe-mjcbtr">{{ home_page.vision_description }}</div><a class="brxe-text-link" href="{% url 'accomplishments' %}" id="brxe-bovjrr"><span class="icon"><i class="fas fa-arrow-right-long"></i></span><span class="text">{{ home_page.vision_button_text }}</span></a></div></div><div class="brxe-block bricks-lazy-hidden" id="brxe-fwqaiu"><div class="brxe-block bricks-lazy-hidden" id="brxe-zbjxlj"><img alt="" class="brxe-image css-filter size-large bricks-lazy-hidden" data-sizes="(max-width: 1024px) 100vw, 1024px" data-src="{% if home_page.vision_image %}{{ home_page.vision_image.url }}{% else %}https://jbpritzker.com/wp-content/uploads/2025/06/IMG_5645-acc-home-1024x1024.webp{% endif %}" {% if not home_page.vision_image %}data-srcset="https://jbpritzker.com/wp-content/uploads/2025/06/IMG_5645-acc-home-1024x1024.webp 1024w, https://jbpritzker.com/wp-content/uploads/2025/06/IMG_5645-acc-home-300x300.webp 300w, https://jbpritzker.com/wp-content/uploads/2025/06/IMG_5645-acc-home-150x150.webp 150w, https://jbpritzker.com/wp-content/uploads/2025/06/IMG_5645-acc-home-768x768.webp 768w, https://jbpritzker.com/wp-content/uploads/2025/06/IMG_5645-acc-home-1536x1536.webp 1536w, https://jbpritzker.com/wp-content/uploads/2025/06/IMG_5645-acc-home-2048x2048.webp 2048w"{% endif %} data-type="string" decoding="async" height="1024" id="brxe-ygazna" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%201024'%3E%3C/svg%3E" width="1024"/></div></div></div></div></section></div>
+<style>
+@media (max-width: 991px) {
+    #brxe-professional-join .brxe-container {
+        grid-template-columns: 1fr !important;
+    }
+    #brxe-professional-join .brxe-block {
+        min-height: auto !important;
+        height: auto !important;
+    }
+    /* Target the right column specifically to reset grid rows */
+    #brxe-professional-join .brxe-block[style*="grid-template-rows"] {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+}
+</style>
+<!-- Add intl-tel-input CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
+<style>
+    .iti { width: 100%; }
+    .iti__flag { background-image: url("https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/img/flags.png"); }
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      .iti__flag { background-image: url("https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/img/flags@2x.png"); }
+    }
+    /* Fix for dropdown width and text color */
+    .iti__country-list {
+        max-width: 300px;
+        white-space: normal;
+        color: black;
+    }
+    .iti__country {
+        color: black;
+    }
+</style>
+
+<div class="brxe-template" id="brxe-professional-join">
+<section class="brxe-section" style="padding: 0; background-color: #002855;">
+<div class="brxe-container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0; align-items: stretch; width: 100%; max-width: 100%; padding: 0; margin: 0;">
+<!-- Left Column: Join Form -->
+<div class="brxe-block" style="background-color: #002855; color: white; padding: 5rem 5%; height: 100%; min-height: 650px; display: flex; flex-direction: column; justify-content: center;">
+<h2 style="font-size: 3.5rem; font-weight: 700; margin-bottom: 2rem; color: white; line-height: 1.1;">{{ home_page.join_title }}</h2>
+<form action="{% url 'signup' %}" method="POST" style="display: grid; gap: 1rem;" id="signup-form">
+                    {% csrf_token %}
+                    <input name="source" type="hidden" value="homepage_new_section"/>
+<div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+<div style="flex: 1 1 200px;">
+<label for="first_name_new" style="display: block; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; margin-bottom: 0.5rem; letter-spacing: 1px; color: white;">First Name</label>
+<input id="first_name_new" name="first_name" required="" style="width: 100%; padding: 0.75rem; border: none; background-color: white; color: black;" type="text"/>
+</div>
+<div style="flex: 1 1 200px;">
+<label for="last_name_new" style="display: block; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; margin-bottom: 0.5rem; letter-spacing: 1px; color: white;">Last Name</label>
+<input id="last_name_new" name="last_name" required="" style="width: 100%; padding: 0.75rem; border: none; background-color: white; color: black;" type="text"/>
+</div>
+</div>
+<div>
+<label for="postal_code_new" style="display: block; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; margin-bottom: 0.5rem; letter-spacing: 1px; color: white;">Postal Code</label>
+<input id="postal_code_new" name="postal_code" style="width: 100%; padding: 0.75rem; border: none; background-color: white; color: black;" type="text"/>
+</div>
+<div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+<div style="flex: 1 1 200px;">
+<label for="email_new" style="display: block; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; margin-bottom: 0.5rem; letter-spacing: 1px; color: white;">Email</label>
+<input id="email_new" name="email" placeholder="email@email.com" required="" style="width: 100%; padding: 0.75rem; border: none; background-color: white; color: #333;" type="email"/>
+</div>
+<div style="flex: 1 1 200px;">
+<label for="mobile_phone_new" style="display: block; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; margin-bottom: 0.5rem; letter-spacing: 1px; color: white;">Mobile Phone</label>
+<div style="background: white; padding: 0; display: block;">
+<input id="mobile_phone_new" name="mobile_phone" style="width: 100%; padding: 0.75rem; border: none; outline: none; background-color: white; color: black;" type="tel"/>
+</div>
+</div>
+</div>
+<button style="background-color: #F7D54A; color: #002855; border: none; padding: 1rem; font-weight: 900; letter-spacing: 1px; text-transform: uppercase; margin-top: 1rem; cursor: pointer; width: 100%; font-size: 1rem;" type="submit">{{ home_page.join_button_text }}</button>
+</form>
+</div>
+
+<!-- Add intl-tel-input JS -->
+<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var input = document.querySelector("#mobile_phone_new");
+        var iti = window.intlTelInput(input, {
+            utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
+            initialCountry: "ng", // Default to Nigeria
+            separateDialCode: true,
+            preferredCountries: ["ng", "us", "gb"]
+        });
+
+        // Intercept form submission to add full number
+        var form = document.getElementById("signup-form");
+        form.addEventListener("submit", function(e) {
+            // Get the full number in E.164 format
+            var fullNumber = iti.getNumber();
+            // Update the input value
+            input.value = fullNumber;
+        });
+    });
+</script>
+
+<!-- SweetAlert2 for Popup Alerts -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+{% if messages %}
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        {% for message in messages %}
+            {% if 'success' in message.tags %}
+                Swal.fire({
+                    title: 'Success!',
+                    text: "{{ message|escapejs }}",
+                    icon: 'success',
+                    confirmButtonText: 'Great!',
+                    confirmButtonColor: '#002855',
+                    background: '#fff',
+                    color: '#000'
+                });
+            {% elif 'error' in message.tags %}
+                Swal.fire({
+                    title: 'Error!',
+                    text: "{{ message|escapejs }}",
+                    icon: 'error',
+                    confirmButtonText: 'Okay',
+                    confirmButtonColor: '#d33'
+                });
+            {% endif %}
+        {% endfor %}
+    });
+</script>
+{% endif %}
+
+<!-- Right Column: Connect & Action -->
+<div class="brxe-block" style="display: grid; grid-template-rows: 1fr 1fr; height: 100%; min-height: 650px;">
+<!-- Top: Get Connected -->
+<div style="background-color: #0099FF; padding: 5rem; color: white; flex: 1; display: flex; flex-direction: column; justify-content: center;">
+<h2 style="font-size: 3.5rem; font-weight: 700; margin-bottom: 1.5rem; color: white; line-height: 1.1;">{{ home_page.connect_title }}</h2>
+<div style="display: flex; gap: 1.5rem; font-size: 2rem; flex-wrap: wrap;">
+{% if home_page.facebook_url %}<a href="{{ home_page.facebook_url }}" style="color: white; text-decoration: none;"><i class="fab fa-facebook-f"></i></a>{% endif %}
+{% if home_page.twitter_url %}<a href="{{ home_page.twitter_url }}" style="color: white; text-decoration: none;"><i class="fab fa-x-twitter"></i></a>{% endif %}
+{% if home_page.instagram_url %}<a href="{{ home_page.instagram_url }}" style="color: white; text-decoration: none;"><i class="fab fa-instagram"></i></a>{% endif %}
+{% if home_page.youtube_url %}<a href="{{ home_page.youtube_url }}" style="color: white; text-decoration: none;"><i class="fab fa-youtube"></i></a>{% endif %}
+{% if home_page.threads_url %}<a href="{{ home_page.threads_url }}" style="color: white; text-decoration: none;"><i class="fab fa-threads"></i></a>{% endif %}
+{% if home_page.tiktok_url %}<a href="{{ home_page.tiktok_url }}" style="color: white; text-decoration: none;"><i class="fab fa-tiktok"></i></a>{% endif %}
+</div>
+</div>
+<!-- Bottom: Take Action -->
+<div style="background-color: #F7D54A; padding: 5rem; color: #002855; flex: 1; display: flex; flex-direction: column; justify-content: center;">
+<h2 style="font-size: 3.5rem; font-weight: 700; margin-bottom: 1.5rem; color: #002855; line-height: 1.1;">{{ home_page.action_title }}</h2>
+<a href="{{ home_page.action_button_url }}" style="background-color: #0099FF; color: white; padding: 1rem 2.5rem; font-weight: 700; text-transform: uppercase; text-decoration: none; width: fit-content; font-size: 1rem; border: none;">{{ home_page.action_button_text }}</a>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var a = document.getElementById('brxe-axthuo');
+  if (a) {
+    a.href = '{{ video_embed_url }}';
+    a.setAttribute('data-pswp-video-url', '{{ video_embed_url }}');
+  }
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var a = document.getElementById('brxe-axthuo');
+  if (!a) return;
+  a.addEventListener('click', function(e) {
+    e.preventDefault();
+    var parent = a.parentElement || document.body;
+    var existing = document.getElementById('video-embed-container');
+    if (!existing) {
+      existing = document.createElement('div');
+      existing.id = 'video-embed-container';
+      existing.style.position = 'relative';
+      existing.style.paddingTop = '56.25%';
+      existing.style.marginTop = '1rem';
+      existing.style.backgroundColor = '#000';
+      parent.insertBefore(existing, a.nextSibling);
+    }
+    if (!existing.querySelector('iframe')) {
+      var iframe = document.createElement('iframe');
+      var src = '{{ video_embed_url }}';
+      var sep = src.indexOf('?') === -1 ? '?' : '&';
+      iframe.src = src + sep + 'autoplay=1&rel=0&modestbranding=1';
+      iframe.style.position = 'absolute';
+      iframe.style.top = '0';
+      iframe.style.left = '0';
+      iframe.style.width = '100%';
+      iframe.style.height = '100%';
+      iframe.frameBorder = '0';
+      iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+      iframe.allowFullscreen = true;
+      existing.appendChild(iframe);
+    }
+  });
+});
+</script>
+{% endblock %}

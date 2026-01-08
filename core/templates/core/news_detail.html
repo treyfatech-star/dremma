@@ -1,0 +1,28 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+<section class="brxe-section" style="padding: 4rem 0;">
+    <div class="brxe-container" style="max-width: 800px; margin: 0 auto;">
+        <div style="text-align: center; margin-bottom: 2rem;">
+            <h1 class="brxe-heading" style="font-size: 2.5rem; margin-bottom: 1rem;">{{ article.title }}</h1>
+            <p style="color: #666; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">
+                {{ article.published_date|date:"F j, Y" }}
+            </p>
+        </div>
+
+        {% if article.image %}
+            <div style="margin-bottom: 3rem; border-radius: 8px; overflow: hidden;">
+                <img src="{{ article.image.url }}" alt="{{ article.title }}" style="width: 100%; height: auto; display: block;">
+            </div>
+        {% endif %}
+
+        <div class="brxe-text-basic" style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 3rem;">
+            {{ article.content|linebreaks }}
+        </div>
+
+        <div style="border-top: 1px solid #eee; padding-top: 2rem;">
+            <a href="{% url 'news_list' %}" class="brxe-button sm outline">&larr; Back to News</a>
+        </div>
+    </div>
+</section>
+{% endblock %}
