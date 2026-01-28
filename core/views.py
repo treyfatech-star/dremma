@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib import messages
-from .models import HomePage, MeetCandidatePage, MeetRunningMatePage, Accomplishment, NewsArticle, VolunteerPage, Signup
+from .models import HomePage, MeetCandidatePage, Accomplishment, NewsArticle, VolunteerPage, Signup
 from .forms import SignupForm
 from urllib.parse import urlparse, parse_qs
 
@@ -74,9 +74,7 @@ def meet_candidate(request):
     page, created = MeetCandidatePage.objects.get_or_create(defaults={'title': 'Meet Dr. Emmanuel N. Musa', 'content': 'Content goes here...'})
     return render(request, 'core/meet_candidate.html', {'page': page})
 
-def meet_running_mate(request):
-    page, created = MeetRunningMatePage.objects.get_or_create(defaults={'title': 'Meet Christian', 'content': 'Content goes here...'})
-    return render(request, 'core/meet_running_mate.html', {'page': page})
+
 
 def accomplishments(request):
     items = Accomplishment.objects.all()

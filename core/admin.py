@@ -4,7 +4,7 @@ from django.core.mail import send_mass_mail
 from django.utils import timezone
 from django.contrib import messages
 import csv
-from .models import HomePage, MeetCandidatePage, Accomplishment, MeetRunningMatePage, NewsArticle, VolunteerPage, Signup, EmailCampaign
+from .models import HomePage, MeetCandidatePage, Accomplishment, NewsArticle, VolunteerPage, Signup, EmailCampaign
 
 @admin.register(HomePage)
 class HomePageAdmin(admin.ModelAdmin):
@@ -57,15 +57,7 @@ class AccomplishmentAdmin(admin.ModelAdmin):
     list_display = ('title', 'order')
     list_editable = ('order',)
 
-@admin.register(MeetRunningMatePage)
-class MeetRunningMatePageAdmin(admin.ModelAdmin):
-    list_display = ('title',)
 
-    def has_add_permission(self, request):
-        # Only allow one instance
-        if self.model.objects.exists():
-            return False
-        return super().has_add_permission(request)
 
 @admin.register(NewsArticle)
 class NewsArticleAdmin(admin.ModelAdmin):

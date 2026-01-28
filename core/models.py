@@ -52,12 +52,7 @@ class HomePage(models.Model):
     action_button_text = models.CharField(max_length=100, default="Learn More")
     action_button_url = models.URLField(blank=True)
 
-    # Meet Running Mate Section
-    running_mate_title = models.CharField(max_length=255, default="Meet Christian")
-    running_mate_description = models.TextField(default="From serving as a State Representative to Deputy Governor to the Adamawa Air National Guard, Christian Mitchell has dedicated himself to improving the lives and livelihoods of all Adamawaians. He is running for Lieutenant Governor to keep our state moving forward.")
-    running_mate_button_text = models.CharField(max_length=100, default="Learn more about Christian")
-    running_mate_image_1 = models.ImageField(upload_to='home/running_mate/', blank=True, null=True, help_text="First image for running mate section")
-    running_mate_image_2 = models.ImageField(upload_to='home/running_mate/', blank=True, null=True, help_text="Second image for running mate section")
+
 
     # Vision/Accomplishments Section
     vision_title = models.CharField(max_length=255, default="Adamawa Is Heading In The Right Direction")
@@ -108,17 +103,7 @@ class Accomplishment(models.Model):
     def __str__(self):
         return self.title
 
-class MeetRunningMatePage(models.Model):
-    title = models.CharField(max_length=200, default="Meet Christian")
-    content = models.TextField()
-    image = models.ImageField(upload_to='running_mate/', blank=True, null=True)
 
-    class Meta:
-        verbose_name = "Meet Running Mate Page"
-        verbose_name_plural = "Meet Running Mate Page"
-
-    def __str__(self):
-        return self.title
 
 class NewsArticle(models.Model):
     title = models.CharField(max_length=200)
